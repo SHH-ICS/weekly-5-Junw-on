@@ -4,14 +4,12 @@ def calculatePi(digits):
     if int(digits) < 0:
       result = "Invalid input"
       return result
-    for x in range(int(digits)):
+    for x in range(1,int(digits) + 1):
       x = x - 1
-      result = result + ((-1) ** x) / (2 * x + 1)
+      result = result + 4 * (((-1) ** x) / (2 * x + 1))
   except:
     result = "Invalid input"
-  return result
+  return result 
 
 numberofdigits = input()
-y = (calculatePi(numberofdigits))
-z = 4 * y
-print(z)
+print(calculatePi(numberofdigits))
