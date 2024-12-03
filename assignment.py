@@ -5,10 +5,10 @@ def calculatePi(digits):
       result = "Invalid input"
       return result
     for x in range(0, int(digits) + 1):
-      result = result + 4 * (((-1) ** x) / (2 * x + 1))
+      result = result + (((-1) ** x) / (2 * x + 1))
   except:
     result = "Invalid input"
-  return result
+  return result * 4
 
 numberofdigits = input()
 print(calculatePi(numberofdigits))
