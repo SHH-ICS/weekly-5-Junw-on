@@ -12,4 +12,6 @@ def calculatePi(digits):
   return result
 
 numberofdigits = input()
-print(4 * calculatePi(numberofdigits))
+y = (calculatePi(numberofdigits))
+z = 4 * y
+print(z)
